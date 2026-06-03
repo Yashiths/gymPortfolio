@@ -93,7 +93,7 @@ export default function Navbar() {
             onClick={(e) => handleScroll(e, '#home')}
             className="text-white font-bold text-xl uppercase tracking-wider shrink-0"
           >
-            ELITE <span className="text-brand-orange">FORCE</span>
+            Fittness with <span className="text-brand-orange">YASH</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -218,7 +218,7 @@ export default function Navbar() {
                       <label className="block text-[11px] text-gray-400 uppercase tracking-wider mb-1.5">Trainer Email</label>
                       <input
                         type="email"
-                        placeholder="trainer@eliteforce.com"
+                        placeholder="trainer@Fittness withYASH.com"
                         value={emailInput}
                         onChange={(e) => { setEmailInput(e.target.value); setAuthError(false); }}
                         className={`w-full bg-[#090d16] border rounded-xl px-4 py-3 text-gray-100 text-sm focus:outline-none focus:border-brand-orange transition-colors ${authError ? 'border-red-500' : 'border-gray-700'}`}

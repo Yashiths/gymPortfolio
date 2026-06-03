@@ -26,7 +26,7 @@ export default function Customers() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState('All'); // 'All' | 'Active' | 'Inactive'
-  const [packageFilter, setPackageFilter] = useState('All'); // 'All' | 'Starter Build' | 'Lean Shred' | 'Elite Lifestyle Protocol'
+  const [packageFilter, setPackageFilter] = useState('All'); // 'All' | 'Starter Build' | 'Lean Shred' | 'Fittness with Lifestyle Protocol'
   
   const [selectedCustomerId, setSelectedCustomerId] = useState(null);
   const [showAddForm, setShowAddForm] = useState(false);
@@ -145,7 +145,7 @@ export default function Customers() {
             <option value="All">All Packages</option>
             <option value="Starter Build">Starter Build</option>
             <option value="Lean Shred">Lean Shred</option>
-            <option value="Elite Lifestyle Protocol">Elite Lifestyle Protocol</option>
+            <option value="Fittness with Lifestyle Protocol">Fittness with Lifestyle Protocol</option>
           </select>
         </div>
       </div>
@@ -564,7 +564,7 @@ export default function Customers() {
                     >
                       <option value="Starter Build">Starter Build ($149/mo)</option>
                       <option value="Lean Shred">Lean Shred ($249/mo)</option>
-                      <option value="Elite Lifestyle Protocol">Elite Lifestyle Protocol ($399/mo)</option>
+                      <option value="Fittness with Lifestyle Protocol">Fittness with Lifestyle Protocol ($399/mo)</option>
                     </select>
                   </div>
 

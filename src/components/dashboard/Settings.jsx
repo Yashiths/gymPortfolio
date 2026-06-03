@@ -162,7 +162,7 @@ export default function Settings() {
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="coach@eliteforce.com"
+                            placeholder="coach@Fittness withYASH.com"
                             className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan transition-colors"
                         />
                     </div>

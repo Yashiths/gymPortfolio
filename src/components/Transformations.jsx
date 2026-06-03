@@ -30,7 +30,7 @@ export default function Transformations() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-xs uppercase tracking-widest font-bold text-brand-cyan">Success Stories</h2>
-          <p className="text-4xl sm:text-5xl font-display font-bold uppercase text-white">ELITE EVOLUTIONS</p>
+          <p className="text-4xl sm:text-5xl font-display font-bold uppercase text-white">Fittness with EVOLUTIONS</p>
           <div className="w-16 h-1 bg-gradient-to-r from-brand-cyan to-brand-orange mx-auto rounded-full" />
         </div>
 

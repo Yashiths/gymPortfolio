@@ -11,7 +11,7 @@ export default function Hero({ isEditing = false, data, onEditField }) {
       <div className="min-h-screen bg-dark-bg flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
           <Zap className="w-8 h-8 text-brand-orange animate-bounce" />
-          <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Loading Elite Portal...</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Loading Fittness with Portal...</p>
         </div>
       </div>
     );
@@ -19,9 +19,9 @@ export default function Hero({ isEditing = false, data, onEditField }) {
 
   // Fallback settings to gracefully handle empty database structures without breaking the UI
   const heroData = data || landingData?.hero || {
-    welcomeBadge: "Welcome to Elite Force",
+    welcomeBadge: "Welcome to Fittness with Yash",
     headline: "Build Your Ultimate Performance",
-    subtitle: "Custom programming, evidence-based nutrition, and elite coaching engineered for your specific physiological goals.",
+    subtitle: "Custom programming, evidence-based nutrition, and Fittness with coaching engineered for your specific physiological goals.",
     ctaPrimary: "Start Training",
     ctaSecondary: "View Packages",
     successRate: "98%",
@@ -257,7 +257,7 @@ export default function Hero({ isEditing = false, data, onEditField }) {
                 )}
                 
                 <div className="space-y-2 mt-4 bg-black/40 backdrop-blur-sm p-4 rounded-xl border border-white/5">
-                  <p className="font-display text-2xl font-bold uppercase tracking-wider text-white">ELITE PERFORMANCE</p>
+                  <p className="font-display text-2xl font-bold uppercase tracking-wider text-white">Fittness with PERFORMANCE</p>
                   <p className="text-xs text-brand-orange font-semibold tracking-widest uppercase">TRAIN WITH PURPOSE</p>
                   <p className="text-xs text-gray-400 max-w-[200px] leading-relaxed mt-2 mx-auto">
                     A high-end system built on biomechanics, custom programming, and progressive overload.
@@ -291,7 +291,7 @@ export default function Hero({ isEditing = false, data, onEditField }) {
             </div>
             <div>
               <p className="text-lg font-bold font-display text-white leading-none">Certified Pro</p>
-              <p className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold mt-1">ISSA & NASM Elite</p>
+              <p className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold mt-1">ISSA & NASM Fittness with</p>
             </div>
           </motion.div>
 

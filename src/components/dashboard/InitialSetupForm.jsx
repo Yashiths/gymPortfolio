@@ -49,7 +49,7 @@ export default function InitialSetupForm() {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="admin@eliteforce.com"
+                        placeholder="admin@Fittness withYASH.com"
                         className="w-full px-4 py-3 bg-[#0d1220] border border-white/10 rounded-xl text-white text-sm focus:outline-none focus:border-brand-orange transition-all"
                     />
                 </div>

@@ -37,13 +37,13 @@ export default function TransformationForm({ selectedGoal, selectedPackage }) {
     setError('');
 
     // Pre-formatted text message template exactly as requested:
-    const templateMessage = `Hi Coach! I want to join your Elite Coaching Program. Here are my details:\n- Name: ${name.trim()}\n- Contact: ${phone.trim()}\n- Email: ${email.trim()}\n- My Goal: ${goal}\n- Experience Level: ${experience}\n- Message: ${message.trim() || 'No additional comments.'}`;
+    const templateMessage = `Hi Coach! I want to join your Fittness with Coaching Program. Here are my details:\n- Name: ${name.trim()}\n- Contact: ${phone.trim()}\n- Email: ${email.trim()}\n- My Goal: ${goal}\n- Experience Level: ${experience}\n- Message: ${message.trim() || 'No additional comments.'}`;
 
     // 1. Log the lead directly in the Dashboard state
     const goalToPackageMap = {
       'Strength Build': 'Starter Build',
       'Fat Loss': 'Lean Shred',
-      'Contest Prep': 'Elite Lifestyle Protocol',
+      'Contest Prep': 'Fittness with Lifestyle Protocol',
       'Muscle Gain': 'Lean Shred' // fallback
     };
     

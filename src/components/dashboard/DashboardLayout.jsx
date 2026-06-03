@@ -66,7 +66,7 @@ export default function DashboardLayout({ children }) {
       <div className="md:hidden flex items-center justify-between p-4 bg-black/40 border-b border-white/5 backdrop-blur-md sticky top-0 z-40">
         <div className="flex items-center gap-2">
           <Zap className="w-5 h-5 text-brand-orange animate-pulse" />
-          <span className="font-display text-xl font-bold uppercase tracking-wider text-white">ELITE PORTAL</span>
+          <span className="font-display text-xl font-bold uppercase tracking-wider text-white">Fittness with PORTAL</span>
         </div>
         <button
           onClick={() => isSetupDone && setMobileMenuOpen(true)} // බ්ලොක් කරලා තියෙන්නේ setup වෙනකන්
@@ -100,7 +100,7 @@ export default function DashboardLayout({ children }) {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Zap className="w-6 h-6 text-brand-orange" />
-                    <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">ELITE PORTAL</span>
+                    <span className="font-display text-2xl font-bold uppercase tracking-wider text-white">Fittness with PORTAL</span>
                   </div>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
@@ -146,7 +146,7 @@ export default function DashboardLayout({ children }) {
               <Zap className="w-4 h-4 fill-white" />
             </div>
             <div>
-              <h1 className="font-display text-xl font-bold uppercase tracking-wider text-white leading-none">ELITE FORCE</h1>
+              <h1 className="font-display text-xl font-bold uppercase tracking-wider text-white leading-none">Fittness with Yash</h1>
               <p className="text-[9px] uppercase tracking-widest text-brand-cyan font-bold mt-0.5">Trainer Dashboard</p>
             </div>
           </div>

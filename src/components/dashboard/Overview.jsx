@@ -37,7 +37,7 @@ export default function Overview() {
   const packageStats = {
     'Starter Build': { count: 0, price: 149 },
     'Lean Shred': { count: 0, price: 249 },
-    'Elite Lifestyle Protocol': { count: 0, price: 399 }
+    'Fittness with Lifestyle Protocol': { count: 0, price: 399 }
   };
 
   customers.forEach(cust => {

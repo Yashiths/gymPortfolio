@@ -25,9 +25,9 @@ export function GymProvider({ children }) {
   // Default CMS configuration to seed Firestore if empty
   const defaultLandingData = {
     hero: {
-      welcomeBadge: "Welcome to Elite Force",
+      welcomeBadge: "Welcome to Fittness with Yash",
       headline: "Build Your Ultimate Performance",
-      subtitle: "Custom programming, evidence-based nutrition, and elite coaching engineered for your specific physiological goals.",
+      subtitle: "Custom programming, evidence-based nutrition, and Fittness with coaching engineered for your specific physiological goals.",
       ctaPrimary: "Start Training",
       ctaSecondary: "View Packages",
       successRate: "98%",
@@ -36,7 +36,7 @@ export function GymProvider({ children }) {
       imageUrl: ""
     },
     contact: {
-      email: "coach@eliteforce.com",
+      email: "coach@Fittness withYASH.com",
       activeHours: "06:00 AM - 10:00 PM EST",
       whatsappLink: "https://wa.me/your-number",
       instagram: "https://instagram.com",
@@ -46,15 +46,15 @@ export function GymProvider({ children }) {
     about: {
       meetBadge: "Meet Your Coach",
       title: "Designed for Supremacy. Built on Science.",
-      bioParagraph1: "Coach Roman Vance is a certified elite performance coach with over a decade of experience transforming bodies and minds. His philosophy is rooted in evidence-based practices, combining cutting-edge exercise physiology with personalized nutritional strategies. He believes in building sustainable habits that lead to lifelong results, not just quick fixes.",
+      bioParagraph1: "Coach Roman Vance is a certified Fittness with performance coach with over a decade of experience transforming bodies and minds. His philosophy is rooted in evidence-based practices, combining cutting-edge exercise physiology with personalized nutritional strategies. He believes in building sustainable habits that lead to lifelong results, not just quick fixes.",
       bioParagraph2: "Having worked with a diverse clientele, from competitive athletes to busy professionals, Roman understands that each individual's journey is unique. He is committed to providing a supportive yet challenging environment, empowering his clients to push past their perceived limits and achieve their full potential.",
       signatureName: "Roman Vance",
       signatureTitle: "Founder & Head Coach",
-      signatureAccent: "EliteForce",
+      signatureAccent: "Fittness withYASH",
       credentialsTitle: "Certifications & Expertise",
       credentialsText: "Roman holds multiple advanced certifications and specializes in biomechanics, strength & conditioning, and advanced nutritional coaching.",
       credentials: [
-        "ISSA Certified Elite Trainer",
+        "ISSA Certified Fittness with Trainer",
         "NASM Certified Personal Trainer",
         "Precision Nutrition Level 1 Coach",
         "Advanced Biomechanics Specialist"
@@ -94,11 +94,11 @@ export function GymProvider({ children }) {
           features: ["Advanced Training Plan", "Personalized Meal Plan", "Bi-Weekly Progress Calls", "24/7 WhatsApp Support"]
         },
         {
-          name: "Elite Lifestyle Protocol",
+          name: "Fittness with Lifestyle Protocol",
           tagline: "Comprehensive transformation & peak performance.",
           price: 399,
           period: "month",
-          features: ["Elite Custom Training", "Macro-Flexible Dieting", "Weekly 1-on-1 Coaching", "Advanced Supplementation Guide"]
+          features: ["Fittness with Custom Training", "Macro-Flexible Dieting", "Weekly 1-on-1 Coaching", "Advanced Supplementation Guide"]
         }
       ]
     }
@@ -238,7 +238,7 @@ export function GymProvider({ children }) {
 
   const addCustomer = async (customerData) => {
     const today = new Date().toISOString().split('T')[0];
-    const baseCostMap = { 'Starter Build': 149, 'Lean Shred': 249, 'Elite Lifestyle Protocol': 399 };
+    const baseCostMap = { 'Starter Build': 149, 'Lean Shred': 249, 'Fittness with Lifestyle Protocol': 399 };
     const cost = baseCostMap[customerData.packageName] || 199;
 
     const newCust = {

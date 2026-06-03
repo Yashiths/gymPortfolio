@@ -36,8 +36,8 @@ export default function Footer() {
               }}
               className="inline-flex items-center space-x-2 font-display text-2xl font-bold uppercase tracking-wider"
             >
-              <span className="text-white">ELITE</span>
-              <span className="text-brand-orange bg-brand-orange/10 px-2 py-0.5 rounded border border-brand-orange/20">FORCE</span>
+              <span className="text-white">Fittness with</span>
+              <span className="text-brand-orange bg-brand-orange/10 px-2 py-0.5 rounded border border-brand-orange/20">YASH</span>
             </a>
             <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
               Bespoke coaching systems built on modern exercise physiology and flexible dieting science. Dedicated to high-performing professionals seeking permanent physical supremacy.
@@ -54,7 +54,7 @@ export default function Footer() {
             <a href={landingData?.contact?.twitter || '#'} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-gray-400 hover:text-brand-orange hover:bg-brand-orange/10 hover:border-brand-orange/20 transition-all" aria-label="Twitter">
                 <TwitterIcon className="w-5 h-5" />
               </a>
-            <a href={`mailto:${landingData?.contact?.email || 'coach@eliteforce.com'}`} className="w-10 h-10 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-gray-400 hover:text-brand-orange hover:bg-brand-orange/10 hover:border-brand-orange/20 transition-all" aria-label="Email">
+            <a href={`mailto:${landingData?.contact?.email || 'coach@Fittness withYASH.com'}`} className="w-10 h-10 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-gray-400 hover:text-brand-orange hover:bg-brand-orange/10 hover:border-brand-orange/20 transition-all" aria-label="Email">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-left space-y-2">
             <p className="text-xs text-gray-500 font-medium">
-              &copy; {currentYear} ELITE FORCE. All Rights Reserved. Made for high performers.
+              &copy; {currentYear} Fittness with Yash. All Rights Reserved. Made for high performers.
             </p>
             <p className="text-[10px] text-gray-600 max-w-2xl leading-relaxed">
               Disclaimer: Consult with your physician before beginning any diet or exercise program. The information provided on this website is for educational and motivational purposes only and is not intended to substitute professional medical advice.
