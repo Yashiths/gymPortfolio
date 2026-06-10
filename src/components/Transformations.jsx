@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
-import { Scale, Flame, Clock, Trophy } from 'lucide-react';
+import { Scale, Flame, Clock, Trophy, ArrowRight } from 'lucide-react';
 import { useGym } from '../context/useGym';
+import { useNavigate } from 'react-router-dom';
 
 export default function Transformations() {
   const { transformations } = useGym();
+  const navigate = useNavigate();
 
   // 💡 Firestore එක හිස් නම් පෙන්වන්න සුපිරි Fallback (Demo) Data එකක් සෙට් කරා ක්‍රෑෂ් නොවී පේන්න
   const displayTransformations = transformations?.length > 0 ? transformations : [
@@ -35,7 +37,7 @@ export default function Transformations() {
         </div>
 
         <div className="grid grid-cols-1 gap-12">
-          {displayTransformations.map((trans, idx) => (
+          {displayTransformations.slice(0, 2).map((trans, idx) => (
             <motion.div
               key={trans.id}
               initial={{ opacity: 0, y: 30 }}
@@ -79,6 +81,23 @@ export default function Transformations() {
             </motion.div>
           ))}
         </div>
+
+        {/* View All Button */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <button
+            onClick={() => navigate('/transformations')}
+            className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-white/5 border border-white/10 text-white font-bold uppercase tracking-widest text-sm hover:border-brand-orange/50 hover:bg-brand-orange/5 transition-all group shadow-2xl relative overflow-hidden"
+          >
+            <span className="relative z-10">View All Success Stories</span>
+            <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform text-brand-orange" />
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-orange/0 via-brand-orange/5 to-brand-orange/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+          </button>
+        </motion.div>
       </div>
     </section>
   );

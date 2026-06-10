@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,6 +7,7 @@ import Pricing from './components/Pricing';
 import TransformationForm from './components/TransformationForm';
 import Transformations from './components/Transformations';
 import Footer from './components/Footer';
+import AllTransformations from './components/AllTransformations';
 
 // Import Dashboard Layer
 import { GymProvider } from './context/GymContext';
@@ -50,34 +52,30 @@ function AppContent() {
   }
 
   return (
-    <div className="bg-[#090d16] min-h-screen text-gray-100 selection:bg-brand-orange selection:text-white antialiased overflow-x-hidden">
-      {/* Navigation */}
-      <Navbar />
+    <Router>
+      <Routes>
+        {/* Main Landing Route */}
+        <Route path="/" element={
+          <div className="bg-[#090d16] min-h-screen text-gray-100 selection:bg-brand-orange selection:text-white antialiased overflow-x-hidden">
+            <Navbar />
+            <main>
+              <Hero />
+              <About />
+              <Transformations />
+              <Pricing onSelectPackage={handleSelectPackage} />
+              <TransformationForm 
+                selectedGoal={selectedGoal} 
+                selectedPackage={selectedPackage} 
+              />
+            </main>
+            <Footer />
+          </div>
+        } />
 
-      {/* Main Content Layout */}
-      <main>
-        {/* Hero Section */}
-        <Hero />
-
-        {/* Philosophy / About Section */}
-        <About />
-
-        {/* Client Success Stories */}
-        <Transformations />
-
-        {/* Training Programs / Pricing Section */}
-        <Pricing onSelectPackage={handleSelectPackage} />
-
-        {/* Interactive Transformation Contact Form */}
-        <TransformationForm 
-          selectedGoal={selectedGoal} 
-          selectedPackage={selectedPackage} 
-        />
-      </main>
-
-      {/* Footer Section */}
-      <Footer />
-    </div>
+        {/* Full Gallery Route */}
+        <Route path="/transformations" element={<AllTransformations />} />
+      </Routes>
+    </Router>
   );
 }
 
